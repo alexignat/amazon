@@ -1,1 +1,11 @@
-index.html.erb
+<h1>All Products</h1>
+
+
+
+<% @products.each do |product| %>
+ <p><%= link_to product.name, product %>, <%= product.description %>, <%= product.formatted_price %></p>
+<% end %>
+
+
+
+
